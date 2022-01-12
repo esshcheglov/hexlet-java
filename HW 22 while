@@ -1,0 +1,30 @@
+Цикл while (Hexlet 22/29)
+
+Модифицируйте метод printNumbers() так, чтобы он выводил числа в обратном порядке. 
+Для этого нужно идти от верхней границы к нижней. 
+То есть счётчик должен быть инициализирован максимальным значением, 
+а в теле цикла его нужно уменьшать до нижней границы:
+
+package exercise;
+
+public class App {
+    public static void printNumbers(int firstNumber) {
+        // BEGIN (write your solution here)
+        var i = firstNumber;
+        while (i<=firstNumber && i!=0){
+            System.out.println(i);
+            i=i-1;
+        }
+        System.out.println("finished!");
+        // END
+    }
+}
+
+// BEGIN
+        var i = firstNumber;
+        while (i >= 1) {
+            System.out.println(i);
+            i = i - 1;
+        }
+        System.out.println("finished!");
+        // END
